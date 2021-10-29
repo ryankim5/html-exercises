@@ -16,11 +16,14 @@
     <main>
       <header>
         <h2>Log in</h2>
-        <p>Please log in before accessing our website</p>
+        <p>Please log in before accessing our website.</p>
       </header>
-
-      <!-- Add your log in form here -->
-
+      <form action="/log-in"></form>
+        <label for="email">Your Email:</label>
+        <input type="text" id="email" placeholder="Your Email" required><br>
+        <label for="password">Your Password:</label>
+        <input type="password" id="password" placeholder="Your Password" required><br>
+        <input type="submit" value="Log In">
     </main>
   </body>
 </html>
