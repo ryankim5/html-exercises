@@ -18,21 +18,23 @@
 
       <!-- In this example, the 'Wait!' needs stressing when vocalised -->
       <p>
-        "Wait!" shouted Jesse.
+        <b>"Wait!"</b> shouted Jesse.
       </p>
 
       <hr>
 
       <!-- It's a good idea to tell a computer how to read a datetime: -->
       <p>
-        The time is now 2pm, on Wednesay the 12th of February, 2020.
+        The time is now <i><abbr title="2 hours (120 Minutes) after Noon
+(check definition of noon under this piece of text)">2pm</abbr>, on <abbr title="The 4th day of a week (first day is Sunday)">Wednesday</abbr> the 12th of <abbr title="The second month of the Gregorian Calendar">February</abbr>, 2020</i>.<br>
+        Find out the definition of <abbr title='12:00 PM'>Noon</abbr> by hovering over <abbr title='12:00 PM'>this dotted-underlined piece of text</abbr><br>(or the word 'Noon' underlined with dots).
       </p>
 
       <hr>
 
       <!-- What do 'H' and 'O' mean here? -->
       <p>
-        The elements H and O, bond as H20, or water (as it is colloquaially known).
+        The elements <abbr title="Hydrogen">H</abbr> and <abbr title="Oxygen"></abbr>, bond as <abbr title="Water">H2O</abbr>, or water (as it is colloquaially known).
       </p>
 
       <hr>
@@ -41,14 +43,14 @@
       <p>
         Editor's Notes:<br>
 
-        Please use CTRL+B to bold this word: Critical<br>
-        Please use CTRL+I to italicise this word: Doubtful<br>
+        Please use CTRL+B to bold this word: <b>Critical</b><br>
+        Please use CTRL+I to italicise this word: <i>Doubtful</i><br>
 
-        Please underline this word: Thinking<br>
-        Please put a line through this word: Assuming<br>
+        Please underline this word: <u>Thinking</u><br>
+        Please put a line through this word: <s>Assuming</s><br>
 
-        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:
-        "The slow brown fox jumped over the lazy dog."<br>
+        Please show that the word 'slow' was removed, and 'quick' added in its place in the following sentence:<br>
+        "The <s>slow</s> <b>quick</b> brown fox jumped over the lazy dog."<br>
       </p>
 
       <hr>
@@ -58,9 +60,11 @@
         "Woah! 'that' was unexpected!" exclaimed Keith.<br>
         Curiously, Jesse looked at the output on Keith's screen and it said:<br>
 
-          Unexpected value for argument 'that'
-            - in function clickHandler, line 12
-            - called from function anonymous, line 34
+          <code>
+            Unexpected value for argument 'that'<br>
+            in function clickHandler, line 12,<br>
+            called from function anonymous, line 34
+          </code>
       </p>
 
       <hr>
@@ -72,10 +76,25 @@
       <ul>
         <li>
           <a href="#bell-222">Bell 222</a>:<br>
-          The Model 222 is a helicopter made by the Bell Helicopter Corporation.
+          The Model 222 is a <b>helicopter</b> made by the Bell <b>Helicopter</b> Corporation.
         </li>
       </ul>
-
+      <p>
+        The results of the search is in <b>bold</b>.<br>
+        How you searched your document for <b>Helicopter</b>:<br>
+        <code>
+          Search Query: '<b>Helicopter</b>'<br>
+          CapsCheck: OFF<br>
+          Documents: All<br>
+          (List of documents searched):<br>
+          <blockquote>
+            ./index.html<br>
+            ./css/main.css<br>
+            ./documents/txt-format/document.txt<br>
+            ./markdown-files/helicopters/about-helicopters.md
+          </blockquote>
+        </code>
+      </p>
     </main>
   </body>
 </html>
