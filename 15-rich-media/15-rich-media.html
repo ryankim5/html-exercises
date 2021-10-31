@@ -18,22 +18,51 @@
       <article>
         <header>
           <h2>Audio</h2>
+          <audio controls>
+            <source src="./audio/purr.ogg" type="audio/ogg">  
+          </audio>
         </header>
         <!-- Add the audio example here -->
       </article>
       <article>
         <header>
           <h2>Video</h2>
+          <video controls height=480 width=270>
+            <source src="./video/chip.mp4" type="video/mp4">
+          </video>
         </header>
         <!-- Add the video example here -->
       </article>
       <article>
         <header>
           <h2>Canvas</h2>
+          <div id="chartContainer" style="height: 500px; width: 50%;"></div>
         </header>
-        <!-- Add the canvas example here -->
+        <script></script>
       </article>
     </main>
     <!-- For the canvas to work, we'll need the script included here -->
+    <script type="text/javascript" src="./canvasjs.min.js"></script>
+    <script type="text/javascript">
+      window.onload = function () {
+          var chart = new CanvasJS.Chart("chartContainer", {
+              data: [
+              {
+                  type: "column",
+                  dataPoints: [
+                  { x: 10, y: 10 },
+                  { x: 20, y: 15 },
+                  { x: 30, y: 25 },
+                  { x: 40, y: 30 },
+                  { x: 50, y: 28 }
+                  ]
+              }
+              ]
+          });
+ 
+          chart.render();
+      }
+  </script>
   </body>
 </html>
+<!--1080x1920-->
