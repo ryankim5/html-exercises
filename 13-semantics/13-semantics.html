@@ -6,6 +6,11 @@
     <title>
       13: Semantic HTML
     </title>
+    <style>
+      table, th, td {
+        border: 1px solid black;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -24,6 +29,11 @@
             - "About us" links to "/about"
             - "Contact us" links to "/contact"
         -->
+
+        <a href="/">Home</a>
+        <a href="/services">Our services</a>
+        <a href="/about">About us</a>
+        <a href="/contact">Contact us</a>
       </section>
 
       <section>
@@ -41,6 +51,20 @@
               - Prefer to not disclose, "na"
             - Photo, optional, as "profile_photo". The user can upload a photo if they want. We only accept PNGs, JPGs, and WebP formats.
         -->
+        <form action="">
+          <label for="profile_first_name">First Name</label>
+          <input type="text" id="profile_first_name" required><br>
+          <label for="profile_family_name">Family Name</label>
+          <input type="profile_family_name" required><br>
+          <label for="username">Email</label>
+          <input type="email" id="username"><br>
+          <label for="gender">Gender</label>
+          <input type="text" accept="m f na"><br>
+          <label for="profile_photo">Profile Image</label>
+          <input type="file" id="profile_photo" accept="image/png image/jpeg image/webp"><br>
+          <i>*Only JPEGs, PNGs, or WebPs allowed</i><br>
+          <input type="submit">
+        </form>
       </section>
 
       <section>
@@ -54,6 +78,16 @@
 
           "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
         -->
+        <h3>The Story of Your Life</h1>
+        <i>By Ted Chiang</i>
+
+        <p>
+          "The only reason you had me was so you could get a maid you wouldn't have to pay," you'll say bitterly, dragging the vacuum cleaner out of the closet.<br>
+
+          "That's right!" I'll say. "Thirteen years ago I knew the carpets would need vacuuming around now, and having a baby seemed to be the cheapest and easiest way to get the job done. Now kindly get on with it."<br>
+
+          "If you weren't my mother, this would be illegal," you'll say, seething as you unwind the power cord and plug it into the wall outlet.
+        </p>
       </section>
 
       <section>
@@ -74,6 +108,33 @@
 
           Please provide a summary of the student's information.
         -->
+
+        <table>
+          <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Weight</th>
+            <th>Height</th>
+          </tr>
+          <tr>
+            <td>Fred</td>
+            <td>23</td>
+            <td>74kg</td>
+            <td>182cm</td>
+          </tr>
+          <tr>
+            <td>Anne</td>
+            <td>26</td>
+            <td>56kg</td>
+            <td>173cm</td>
+          </tr>
+          <tr>
+            <td>Judith</td>
+            <td>19</td>
+            <td>51kg</td>
+            <td>168cm</td>
+          </tr>
+        </table>
       </section>
 
       <section>
@@ -111,6 +172,7 @@
             Excerpt:
               Develop your critical thinking skills. Boost your ability to solve problems and make the right decisions at work, home and in study.
         -->
+        <p>The link to the results: <a href="./search-results.html">search-results.html</a></p>
       </section>
       <section>
         <h2>A definition</h2>
@@ -119,8 +181,8 @@
           It is a definition of the word 'Markup'.
         -->
         <img src="markup.png" alt="There are three definitions for the word 'Markup'">
+        <p>Go <a href="./markup-definition.html">here</a> for the definition.</p>
       </section>
-
     </main>
   </body>
 </html>
